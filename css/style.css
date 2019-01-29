@@ -1,0 +1,22 @@
+@font-face{
+	font-family: 'Vulpes';
+	src: url(fonts/Vulpes.ttf);
+}
+
+@font-face{
+	font-family: 'coolvetica';
+	src:url(../fonts/coolvetica rg.ttf)
+}
+
+
+html{
+	height: 100%;
+	background-image: linear-gradient(45deg, #DAE2F8 0%,#D6A4A4 100%);
+}
+ 
+#titre{
+	text-transform:lowercase;
+	font-family: 'coolvetica';
+	text-align: center;
+	font-size: 50px;
+}
