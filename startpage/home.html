@@ -22,10 +22,12 @@
 			<div id="image">
 				<img class="hello" alt="hello" src="images/side.jpg">
 			</div>
-		
-			<div id=seachbar>
-				<iframe src="https://duckduckgo.com/search.html?width=250&duck=yes&prefill=Search DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:383px;height:60px;" frameborder="0"></iframe>
-			</div>
+
+		<span class="termSym">λ ~</span> &nbsp; <span class="termTxt">search </span><span class="search-block">
+			<form id="search-form" action="https://www.duckduckgo.com/?q=" method="get" target="_blank">
+				<input type="text" name="q" id="search" autocomplete="off" placeholder="autofocus"/>
+			</form>
+		</span>
 		</div>
     </body>
 </html>
