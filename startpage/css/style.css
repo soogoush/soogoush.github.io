@@ -1,22 +1,120 @@
 body{
-/*  background-image: linear-gradient(45deg, #DAE2F8 0%,#D6A4A4 100%); */
-  background-image: url('../images/poolf9caf8.jpg');
-  background-color: #f9caf8;
+  background-image: url('../images/sky.png');
+  background-color: rgb(127,173,113);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* #block{
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+@font-face{
+  font-family: 'Vulpes';
+  src: url('../fonts/Vilpes.ttf');
 }
 
-#block img {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  border-style: solid;
-  border-width: 5px;
-  border-color: white;
-} */
+#menu{
+  font-family: 'Vulpes';
+}
+
+/* Navigation */
+
+header > nav > ul 
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+/* Menu déroulant */
+
+#menu, #menu ul /* Liste */     
+{
+        padding : 2px; /* marge intérieure */
+        list-style : none; /* on supprime le style par défaut de la liste */
+        text-align : center; /* on centre le texte qui se trouve dans la liste */
+}
+
+#menu a{ /* Contenu des listes */
+    text-decoration:none; /* On supprime le style par défaut */
+    display:block; /* on change le type d'élément, les liens deviennent des balises de type block */
+    padding:2px 2px;
+    color:#000000;
+}
+
+#menu li{
+    display:inline-block;
+    position:relative;
+    background-color: #FFFFFF;
+    width: 160px;
+}
+
+
+
+#menu ul{
+    position:absolute;
+    z-index: 1000;
+    max-height:0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu li:hover ul{
+    max-height:15em;
+}
+
+#menu li:first-child li{
+    background:#01DFD7;
+}
+#menu li:nth-child(2) li{
+    background:#FFBF00;
+}
+#menu li:nth-child(3) li{
+    background:#DF0101;
+}
+#menu li:nth-child(4) li{
+    background:#4B088A;
+}
+#menu li:last-child li{
+    background:#000000;
+}
+
+/* background des liens menus et sous menus au survol */
+#menu li:first-child:hover, #menu li:first-child li:hover{
+    background:#01DFD7;
+}
+#menu li:nth-child(2):hover, #menu li:nth-child(2) li:hover{
+    background:#FFBF00;
+}
+#menu li:nth-child(3):hover, #menu li:nth-child(3) li:hover{
+    background:#DF0101;
+}
+#menu li:nth-child(4):hover, #menu li:nth-child(4) li:hover{
+    background:#4B088A;
+}
+#menu li:last-child:hover, #menu li:last-child li:hover{
+    background:#000000;
+}
+
+#menu ul a{
+    padding:8px 0;
+}
+#menu li:hover li a{
+    color:#FFF;
+}
+#menu li:hover a, #menu li li:hover a{
+    color:#FFF;
+}
+
+.texte:hover
+{
+  font-weight: bold;
+}
